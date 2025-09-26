@@ -1,20 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { ScrollView } from "react-native";
+import CounterApp from "./CounterApp";
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>gavas cita</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView style={{ flex: 1 }}>
+      <CounterApp/> 
+
+
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
