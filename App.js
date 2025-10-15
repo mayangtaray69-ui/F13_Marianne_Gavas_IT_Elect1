@@ -1,15 +1,4 @@
-import React from "react";
-import { ScrollView } from "react-native";
-import CounterApp from "./CounterApp";
-import ColorChangerApp from "./ColorChangerApp";
+import React from 'react';
+import ChatApp from './ChatApp';  // Import your ChatApp file
 
-export default function App() {
-  return (
-    <ScrollView style={{ flex: 1 }}>
-      <CounterApp/> 
-      <ColorChangerApp />
-
-
-    </ScrollView>
-  );
-}
+export default ChatApp;           // Run ChatApp as main app
